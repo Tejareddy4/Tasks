@@ -9,15 +9,8 @@
 <body>
 <h1>Task List</h1>
 <div th:block th:each="task : ${tasks}">
-    <span th:text="${task.name}"></span>
-    <span th:text="${task.description}"></span>
-    <span th:text="${task.status}"></span>
+    <span th:text="${task.title}">Task Title</span>
 
-    <span th:text="${task.date}"></span>
 </div>
-
- <div th:block th:each="task : ${tasks}">
-     <span th:text="${task.name}"></span>
-
- </div>
 </body>
+</html>
